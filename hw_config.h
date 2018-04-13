@@ -868,7 +868,7 @@
 
 # define APP_LOAD_ADDRESS               0x08008000
 # define BOOTLOADER_DELAY               5000
-# define INTERFACE_USB                  1
+# define INTERFACE_USB                  0
 # define INTERFACE_USART                1
 # define USBDEVICESTRING                "AV V1 BL"
 # define USBPRODUCTID                   0x0002
@@ -883,6 +883,7 @@
 
 # define OSC_FREQ                       16
 
+// ALL LEDS SHOULD PROBABLY BE REMOVED !!!
 # define BOARD_PIN_LED_ACTIVITY         GPIO7 // BLUE
 # define BOARD_PIN_LED_BOOTLOADER       GPIO6 // GREEN
 # define BOARD_PORT_LEDS                GPIOC
@@ -890,14 +891,14 @@
 # define BOARD_LED_ON                   gpio_clear
 # define BOARD_LED_OFF                  gpio_set
 
-# define BOARD_USART  					USART2
+# define BOARD_USART  					USART6
 # define BOARD_USART_CLOCK_REGISTER 	RCC_APB1ENR
-# define BOARD_USART_CLOCK_BIT      	RCC_APB1ENR_USART2EN
+# define BOARD_USART_CLOCK_BIT      	RCC_APB1ENR_USART6EN
 
-# define BOARD_PORT_USART   			GPIOD
+# define BOARD_PORT_USART   			GPIOG
 # define BOARD_PORT_USART_AF 			GPIO_AF7
-# define BOARD_PIN_TX     				GPIO5
-# define BOARD_PIN_RX		     		GPIO6
+# define BOARD_PIN_TX     				GPIO14
+# define BOARD_PIN_RX		     		GPIO9
 # define BOARD_USART_PIN_CLOCK_REGISTER RCC_AHB1ENR
 # define BOARD_USART_PIN_CLOCK_BIT  	RCC_AHB1ENR_IOPDEN
 # define SERIAL_BREAK_DETECT_DISABLED   1
