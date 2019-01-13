@@ -231,7 +231,7 @@
 # define BOOTLOADER_DELAY               5000
 # define BOARD_FMUV2
 # define INTERFACE_USB                  1
-# define INTERFACE_USART                1
+# define INTERFACE_USART                0
 # define USBDEVICESTRING                "PX4 BL FMU v4.x"
 # define USBPRODUCTID                   0x0012
 # define BOOT_DELAY_ADDRESS             0x000001a0
